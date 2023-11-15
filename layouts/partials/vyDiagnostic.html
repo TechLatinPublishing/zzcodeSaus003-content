@@ -1,0 +1,21 @@
+{{ if .Site.Params.vyDiagnostic }}
+
+<div class="well">
+  <br />
+  <h1>vyDiagnostics here</h1>
+  {{/* {{ template "_internal/disqus.html" . }} */}} {{/* {{ printf "%#v" $.Site
+  }} */}}
+  <br />
+  {{/* {{ printf "%#v" $.title}} */}}
+  <p>title: {{ .Title}}</p>
+  <p>Type: {{ .Type}}</p>
+  {{/*
+  <p>google analytics: {{ $.Site.Params.googleAnalytics }}</p>
+  <p>google analytics: {{ $.Site.Params.ca_pub}}</p>
+  <p>data-ad-client="ca-pub-{{$.Site.Params.ca_pub}}"</p>
+  <br />
+  <p>{{$.Site.GoogleAnalytics}}</p>
+  */}}
+</div>
+
+{{ end }}
